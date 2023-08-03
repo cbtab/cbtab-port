@@ -1,6 +1,9 @@
+import './Experiences.css'
 const Experiences = ()=>{
     return(
-        <div>H</div>
+        <div className="experiences-container" id="experiences">
+                    h
+        </div>
     )
 }
 

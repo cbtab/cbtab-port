@@ -1,7 +1,7 @@
 .main-container {
-    height: 920px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;

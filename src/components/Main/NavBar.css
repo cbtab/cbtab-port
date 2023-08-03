@@ -1,0 +1,32 @@
+/* No changes to the CSS for the NavBar */
+.nav-bar-wrapper {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-bar {
+    height: 5%;
+    transition: height 0.3s ease; /* Add transition for the height property */
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #3b3b3b;
+  }
+  
+  /* Add sticky class to make the NavBar sticky */
+  .sticky .nav-bar {
+    height: 100px; /* Set the height to the desired sticky height */
+  }
+  
