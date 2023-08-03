@@ -1,0 +1,14 @@
+.about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-profile {
+    background-image: url("https://picsum.photos/500/300?grayscale");
+    height: 500px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px;
+}
