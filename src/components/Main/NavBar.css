@@ -1,13 +1,16 @@
-/* No changes to the CSS for the NavBar */
-.nav-bar-wrapper {
-    background-color: #f5f5f5;
+.nav-bar {
+    background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
   }
   
   .nav-bar {
     height: 5%;
-    transition: height 0.3s ease; /* Add transition for the height property */
+    transition: height 0.3s ease;
   }
   
   ul {
@@ -23,10 +26,28 @@
     padding-right: 20px;
     font-family: 'Roboto', sans-serif;
     color: #3b3b3b;
+    text-decoration: none;
   }
   
-  /* Add sticky class to make the NavBar sticky */
-  .sticky .nav-bar {
-    height: 100px; /* Set the height to the desired sticky height */
-  }
-  
+  .nav-bar li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative; 
+}
+
+.nav-bar li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-bar li a:hover::after {
+  width: 100%;
+}

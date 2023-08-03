@@ -6,7 +6,9 @@ const Title = ()=>{
     return (
         <div className="title-container">
             <div className="card-title">
-                <p><span>I'm</span> Chalermchat</p>
+                <div className="name-container">
+                    <p className="text">`I'm {"${"} Chalermchat {"}"}`</p>
+                </div>
                 <div className="title">
                     <h1>{`< Full stack web developer >`}</h1>
                 </div>
