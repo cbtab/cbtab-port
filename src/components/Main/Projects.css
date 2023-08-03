@@ -1,0 +1,84 @@
+.projects-container {
+    padding-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1000px;
+    width: 100%;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards;
+    
+}
+
+.title-projects h1 {
+    color: black;
+}
+
+
+.projects-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .projects-menu ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #3b3b3b;
+    text-decoration: none;
+  }
+  
+  .projects-menu ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .projects-menu ul li button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+  }
+  
+  .projects-menu ul li button:hover::after {
+    width: 100%;
+  }
+  
+  .box-display {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box-display h1{
+    color: black;
+}
+
+.box-showing h1{
+    color: black;
+}
+
+  .card-project {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+  }

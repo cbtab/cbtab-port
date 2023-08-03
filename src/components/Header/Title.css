@@ -1,0 +1,67 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.card-title {
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+}
+
+.name-container { display: inline-block }
+
+.text{
+    color: gold;
+    font-size: 20px;
+    border-right: 3px solid;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    animation:
+        typing 2s steps(18),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0;}
+}

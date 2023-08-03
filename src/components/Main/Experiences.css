@@ -1,0 +1,88 @@
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 600px;
+    width: 100%;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+.cards-container {
+    display: flex;
+    width: 100%;
+}
+
+.cards {
+    color: black;
+    height: 300px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    flex-shrink: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; /* Add transition for downsizing */
+    position: relative; /* Added positioning */
+}
+
+.cards:hover {
+    transform: scale(0.9); 
+}
+
+
+.cards p {
+    color: #3b3b3b;
+    font-size: 70px;
+    transition: font-size 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Added opacity transition */
+    pointer-events: none; /* Added to avoid the text blocking hover on the card */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cards p:last-child {
+    position: absolute; /* Position the text at the center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0; /* Initially make the text invisible */
+}
+
+.cards:hover p:last-child {
+    font-size: 60px; 
+    opacity: 1; 
+}
+
+
+#mongoDB {
+    background-image: url("../../assets/icons/mongodb-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#expressJS {
+    background-image: url("../../assets/icons/expressjs-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#reactJS {
+    background-image: url("../../assets/icons/react-icon.svg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+
+#nodeJS {
+    background-image: url("../../assets/icons/nodejs-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 325px;
+}
