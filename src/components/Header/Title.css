@@ -1,67 +1,74 @@
 .title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
 
 .card-title {
-    height: 100%;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
-
 
 .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
 ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .icon {
-    font-size: 30px;
+  font-size: 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.icon:hover {
+  color: white;
 }
 
 h1 {
-    font-size: 48px;
-    color: white;
+  font-size: 48px;
+  color: white;
 }
 
-.name-container { display: inline-block }
+.name-container {
+  display: inline-block;
+}
 
-.text{
-    color: gold;
-    font-size: 20px;
-    border-right: 3px solid;
-    white-space: nowrap;
-    width: 100%;
-    overflow: hidden;
-    animation:
-        typing 2s steps(18),
-        cursor .4s step-end infinite alternate;
+.text {
+  font-family: "Noto Sans", sans-serif;
+  color: gold;
+  font-size: 20px;
+  border-right: 3px solid;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  animation: typing 2.5s steps(12), cursor 0.4s step-end infinite alternate;
 }
 
 @keyframes cursor {
-    50% { border-color: transparent }
+  50% {
+    border-color: transparent;
+  }
 }
 
 @keyframes typing {
-    from { width: 0;}
+  from {
+    width: 0;
+  }
 }
